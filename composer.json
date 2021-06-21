@@ -1,0 +1,48 @@
+{
+  "name": "regnet/craft-mix",
+  "description": "Craft CMS boilerplate with TailwindCSS, AlpineJS with Laravel Mix",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "project",
+    "tailwind",
+    "mix",
+    "alpine"
+  ],
+  "license": "0BSD",
+  "homepage": "https://regnet.co/",
+  "type": "project",
+  "require": {
+    "craftcms/cms": "^3.6.4",
+    "croxton/imgixer": "^1.0",
+    "ether/seo": "^3.7",
+    "nystudio107/craft-twigpack": "^1.2",
+    "sebastianlenz/linkfield": "^1.0",
+    "vlucas/phpdotenv": "^3.4.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+      "@php -r \"unlink('composer.json');\"",
+      "@php -r \"rename('composer.json.default', 'composer.json');\"",
+      "@composer dump-autoload -o",
+      "@php craft setup/welcome"
+    ]
+  }
+}

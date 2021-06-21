@@ -1,0 +1,61 @@
+<section class="max-w-3xl my-8 md:my-16 mpxx">
+  {% macro errorList(errors) %}
+    {% if errors %}
+      <ul class="errors">
+        {% for error in errors %}
+          <li>{{ error }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endmacro %}
+
+  {% from _self import errorList %}
+
+  <form method="post" action="" accept-charset="UTF-8">
+    {{ csrfInput() }}
+    <input type="hidden" name="action" value="contact-form/send" />
+    {{ redirectInput('boka/tack') }}
+    {{ craft.contactFormExtensions.recaptcha | raw }}
+    {{ hiddenInput('subject', 'Bokningsförfrågan') }}
+    {# {{ hiddenInput('message[formName]', 'bokning') }}
+    {{ hiddenInput('message[template]', 'booking'|hash) }} #}
+    
+
+    <div class="grid gap-8 md:grid-cols-12">
+      <label for="from-name" class="md:col-span-6">
+        <span class="text-xs font-bold uppercase">Namn</span>
+        <input id="from-name"
+          type="text"
+          class="w-full px-0 bg-transparent border-0 border-b border-black focus:border-lofs-red focus:ring-0" 
+          required
+          name="fromName"
+          value="{{ message.fromName ?? '' }}" />
+        {{ message is defined and message
+          ? errorList(message.getErrors('fromName')) }}
+      </label>
+        
+      <label for="from-email" class="md:col-span-6">
+        <span class="text-xs font-bold uppercase ">E-mail</span>
+        <input id="from-email"
+          type="email"
+          required
+           class="w-full px-0 bg-transparent border-0 border-b border-black focus:border-lofs-red focus:ring-0" 
+          name="fromEmail"
+          value="{{ message.fromEmail ?? '' }}" />
+        {{ message is defined and message
+          ? errorList(message.getErrors('fromEmail')) }}
+      </label>
+
+      
+
+    </div>
+    <input class="block w-full p-4 mt-12 text-center bg-black cursor-pointer hover:bg-lofs-red pdu text-lofs-white"
+      type="submit"
+      value="Skicka bokningsförfrågan" />
+      <div class="mt-2 text-center text-2xs a-underline">
+      Denna webbplats är skyddad av reCAPTCHA och Google
+     <a href="https://policies.google.com/privacy"> Sekretesspolicy </a> och
+     <a href="https://policies.google.com/terms"> Användarvillkor </a> gäller. 
+     </div>
+  </form>
+</section>

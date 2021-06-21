@@ -1,0 +1,14 @@
+<section class="max-w-6xl mpxx">
+  <ul class="slick">
+    {% for image in block.images %}
+      <li class="px-4">
+        <a href="{{ image.url }}"
+          data-lightbox="{{ block.id }}"
+          class="relative block w-full md:px-4">
+          {% include '_elements/lazy-cover' %}
+          <div class="pb-full"></div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

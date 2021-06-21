@@ -1,0 +1,15 @@
+{% from "_macros/class-helpers" import gridCols %}
+
+<section class="grid items-center {% if block.marginY %}my-4 md:my-8 {% endif %}
+  {% if not block.bleed %}max-w-6xl mx-auto{% endif %}
+  {{
+  gridCols(block.images|length)
+  }}  {% if block.gap %}gap-4 md:gap-8{% endif %}
+    ">
+  {% for image in block.images %}
+    <div>
+      {% include '_elements/lazy-image' %}
+    </div>
+  {% endfor %}
+
+</section>

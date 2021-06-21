@@ -1,0 +1,21 @@
+{% extends '_layout' %}
+{% set entry = craft.entries.slug('404').one() %}
+
+{% block main %}
+  {% if entry %}
+    <main class="min-h-50">
+      <header class="relative flex h-96 bg-lofs-red">
+        {% set image = entry.cover[0] ?? null %}
+        {% if image %}
+          {% include '_elements/lazy-cover' %}
+        {% endif %}
+        <h1 class="relative z-0 m-auto text-5xl text-center pdu w-96 text-lofs-white">
+          {{ entry.title }}
+        </h1>
+      </header>
+      {% include 'pageBlocks' with {
+        blocks: entry.pageBlocks
+      } %}
+    </main>
+  {% endif %}
+{% endblock %}

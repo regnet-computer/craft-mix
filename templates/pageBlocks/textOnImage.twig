@@ -1,0 +1,16 @@
+<section class="">
+  <div class="relative z-0">
+    {% set image = block.image[0] ?? null %}
+    {% include '_elements/lazy-image' %}
+    <div class="absolute inset-0 z-10 flex w-full h-full">
+      <div class="m-auto text-center text-lofs-white">
+        <h2 class="text-5xl pdu">
+          {{ block.heading }}
+        </h2>
+        <p>
+          {{ block.subHeading }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

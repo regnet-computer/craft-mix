@@ -1,0 +1,37 @@
+{
+  "name": "regnet-craft-mix",
+  "version": "1.0.0",
+  "description": "Craft CMS boilerplate with TailwindCSS, AlpineJS with Laravel Mix",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regnet-computer/craft-mix.git"
+  },
+  "keywords": [
+    "craft",
+    "tailwindcss",
+    "alpinejs"
+  ],
+  "author": "Regnet Co",
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/regnet-computer/craft-mix/issues"
+  },
+  "homepage": "https://github.com/regnet-computer/craft-mix#readme",
+  "dependencies": {
+    "alpinejs": "^3.1.0",
+    "autoprefixer": "^10.2.6",
+    "laravel-mix": "^6.0.24",
+    "laravel-mix-favicon": "^0.3.1",
+    "lazysizes": "^5.3.2",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0"
+  }
+}

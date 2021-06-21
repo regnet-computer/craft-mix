@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ currentSite.language }}">
+  <head>
+    {% include '_base/meta' %}
+    {% include '_base/favicon' %}
+
+    {{ craft.twigpack.includeCssModule('/dist/css/app.css', false) }}
+
+    {% hook 'seo' %}
+
+    <style>
+      [x-cloak]{ display: none }
+    </style>
+  </head>
+
+  <body class="">
+    {% include '_partials/nav' %}
+    {% block main %}
+
+    {% endblock %}
+    {% include '_partials/footer' %}
+
+    {{ craft.twigpack.includeJsModule('/dist/js/app.js', true) }}
+    {{ craft.twigpack.includeJsModule('/dist/js/manifest.js', true) }}
+    {{ craft.twigpack.includeJsModule('/dist/js/vendor.js', true) }}
+  </body>
+</html>

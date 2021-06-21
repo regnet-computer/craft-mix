@@ -1,0 +1,34 @@
+{% if image %}
+  {# Create a srcset by defining a range of widths using the `from`, `to` and `step` parameters #}
+
+  {% if aspect|default(null) %}
+    {% set arw = aspect|split(':')[0] * 100 %}
+    {% set arh = aspect|split(':')[1] * 100 %}
+  {% endif %}
+
+  {% set phw = arw ?? image.width %}
+  {% set phh = arh ?? image.height %}
+
+  {% set placeholder =
+    craft.svgplaceholder.generate({
+      width: phw,
+      height: phh
+    })
+  %}
+
+  <picture>
+    <source data-sizes="auto"
+      data-srcset="{{ image.path|imgix({
+        from: 800,
+        to: 3200,
+        step: 160,
+        fit: 'crop',
+        ar: aspect|default(null)
+      }) }}" />
+
+    <!-- older browsers -->
+    <img class="transition-opacity duration-500 lazyload lazy-fade"
+      src="{{ placeholder }}"
+      alt="" />
+  </picture>
+{% endif %}

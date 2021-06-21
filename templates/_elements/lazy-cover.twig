@@ -1,0 +1,23 @@
+{% if image %}
+  {% set focal_x = image.focalPoint.x * 100 ~ '%' %}
+  {% set focal_y = image.focalPoint.y * 100 ~ '%' %}
+  {% set placeholder =
+    craft.svgplaceholder.generate({
+      height: image.height,
+      width: image.width
+    })
+  %}
+
+  <img style="object-position: {{ focal_x ~ ' ' ~ focal_y }}"
+    class="absolute inset-0 z-0 object-cover w-full h-full transition-opacity duration-500 lazy-fade lazyload"
+    src="{{ placeholder }}"
+    data-srcset="{{ image.path|imgix({
+      from: 640,
+      to: 2600,
+      step: 160
+    }) }}"
+    width="{{ image.width }}"
+    height="{{ image.height }}"
+    data-sizes="auto"
+    alt="{{ image.title }}" />
+{% endif %}

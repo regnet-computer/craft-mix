@@ -1,0 +1,11 @@
+<section class="grid items-center px-0 md:px-8 max-w-6xl gap-4 my-4 m-auto md:grid-cols-2 md:gap-16 body-text md:my-16 text-and-image {{
+  block.layout
+  }}">
+  <div class="image">
+    {% set image = block.image[0] ?? null %}
+    {% include '_elements/lazy-image' %}
+  </div>
+  <div class="px-4 text md:px-0">
+    {{ block.text }}
+  </div>
+</section>
