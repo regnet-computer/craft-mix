@@ -1,7 +1,9 @@
-# Craft-Tailwind-Alpine-Mix Boilerplate 🤌
+# Craft-Tailwind-Alpine-Sprig-Mix Boilerplate 🤌
 
-## 🧰 The toolbox 
-* Craft CMS
-* TailwindCSS 2.2
-* AlpineJS
-* Laravel Mix
+## 🧰 The toolbox
+
+- Craft CMS
+- TailwindCSS
+- AlpineJS
+- Sprig
+- Laravel Mix

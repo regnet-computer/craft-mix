@@ -1,4 +1,4 @@
-dateModified: 1624313076
+dateModified: 1624360854
 email:
   fromEmail: sb@regnet.co
   fromName: 'Regnet Craft Mix'
@@ -8,10 +8,22 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
   seo:
     edition: standard
     enabled: true
     schemaVersion: 3.2.0
+  sprig:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
   twigpack:
     edition: standard
     enabled: true
@@ -24,7 +36,7 @@ system:
   edition: solo
   live: true
   name: 'Regnet Craft Mix'
-  schemaVersion: 3.6.1
+  schemaVersion: 3.6.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

@@ -15,10 +15,13 @@
   "type": "project",
   "require": {
     "craftcms/cms": "^3.6.4",
+    "craftcms/redactor": "^2.8",
     "croxton/imgixer": "^1.0",
     "ether/seo": "^3.7",
     "nystudio107/craft-twigpack": "^1.2",
+    "putyourlightson/craft-sprig": "1.6.0",
     "sebastianlenz/linkfield": "^1.0",
+    "verbb/super-table": "^2.6",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {
