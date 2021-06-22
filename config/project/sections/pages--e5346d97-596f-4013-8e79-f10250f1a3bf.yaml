@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  ae36b6fe-f844-4187-8149-171ac89797bb: # Regnet Craft Mix
+    enabledByDefault: true
+    hasUrls: true
+    template: page
+    uriFormat: '{parent.slug}/{slug}'
+structure:
+  maxLevels: null
+  uid: 6a17803a-afb1-4094-a219-3405d38e75f5
+type: structure
