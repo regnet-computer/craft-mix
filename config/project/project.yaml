@@ -1,9 +1,23 @@
-dateModified: 1624360854
+dateModified: 1624363665
 email:
-  fromEmail: sb@regnet.co
+  fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: 'Regnet Craft Mix'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: $REPLY_TO_ADDRESS
+  template: null
+  transportSettings:
+    encryptionMethod: ''
+    host: $SMTP_HOST
+    password: $SMTP_PASS
+    port: $SMTP_PORT
+    timeout: '10'
+    useAuthentication: '1'
+    username: $SMTP_USER
+  transportType: craft\mail\transportadapters\Smtp
 plugins:
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   imgixer:
     edition: standard
     enabled: true
@@ -24,6 +38,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.2.1
+  svgplaceholder:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   twigpack:
     edition: standard
     enabled: true

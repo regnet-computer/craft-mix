@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: cf2d1c3f-da14-4613-a0dd-1d4f37fcaebd
+fieldGroup: cf2d1c3f-da14-4613-a0dd-1d4f37fcaebd # Common
 handle: logo
 instructions: ''
 name: Logo
@@ -8,7 +8,7 @@ settings:
   allowSelfRelations: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd'
+  defaultUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd' # Images
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -18,11 +18,11 @@ settings:
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd'
+  singleUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd' # Images
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:bc8134e8-a248-4aa2-b7d3-03bab2a59729'
+    - 'volume:bc8134e8-a248-4aa2-b7d3-03bab2a59729' # Graphics
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

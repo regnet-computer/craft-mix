@@ -1,11 +1,11 @@
-field: 2b08a7fc-06c9-4c56-b0f8-e89d1ac32efb
+field: 2b08a7fc-06c9-4c56-b0f8-e89d1ac32efb # Menu
 fieldLayouts:
   be489d10-2ff5-4bd2-9fa2-19b9c1fc6563:
     tabs:
       -
         elements:
           -
-            fieldUid: af1b06df-f20e-4bf4-8ec6-6d4a0037831c
+            fieldUid: af1b06df-f20e-4bf4-8ec6-6d4a0037831c # Link
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cd2f8668-b66f-4078-ba74-cbfa84591afc
+            fieldUid: cd2f8668-b66f-4078-ba74-cbfa84591afc # Submenu
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  af1b06df-f20e-4bf4-8ec6-6d4a0037831c:
+  af1b06df-f20e-4bf4-8ec6-6d4a0037831c: # Link
     contentColumnType: text
     fieldGroup: null
     handle: theLink
@@ -133,7 +133,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: typedlinkfield\fields\LinkField
-  cd2f8668-b66f-4078-ba74-cbfa84591afc:
+  cd2f8668-b66f-4078-ba74-cbfa84591afc: # Submenu
     contentColumnType: string
     fieldGroup: null
     handle: submenu
@@ -144,7 +144,7 @@ fields:
       columns:
         __assoc__:
           -
-            - 12a74f60-709b-4a2e-8778-43a5132f9568
+            - 12a74f60-709b-4a2e-8778-43a5132f9568 # Link
             -
               __assoc__:
                 -

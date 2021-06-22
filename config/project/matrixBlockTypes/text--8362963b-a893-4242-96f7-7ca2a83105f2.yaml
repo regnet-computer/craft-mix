@@ -1,11 +1,11 @@
-field: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7
+field: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7 # Page blocks
 fieldLayouts:
   aee22390-dd04-47c7-b6dd-5520a2cd80cb:
     tabs:
       -
         elements:
           -
-            fieldUid: 43fe6b35-23bc-4f6d-bba5-6b77b0a35b49
+            fieldUid: 43fe6b35-23bc-4f6d-bba5-6b77b0a35b49 # Text
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  43fe6b35-23bc-4f6d-bba5-6b77b0a35b49:
+  43fe6b35-23bc-4f6d-bba5-6b77b0a35b49: # Text
     contentColumnType: text
     fieldGroup: null
     handle: text

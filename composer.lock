@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39452b369549bdc2b05ae15ed8b9429c",
+    "content-hash": "12f4d11fc319b4039934d91e3ff2be4d",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1604,6 +1604,56 @@
             "time": "2020-10-28T02:03:40+00:00"
         },
         {
+            "name": "mblode/svgplaceholder",
+            "version": "1.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mblode/svgplaceholder/zipball/30abaea2819e1d21f0b780dc76a345fe4102aaf9",
+                "reference": "30abaea2819e1d21f0b780dc76a345fe4102aaf9",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SVG Placeholder",
+                "handle": "svgplaceholder",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/MBLODE/svgplaceholder/master/CHANGELOG.md",
+                "class": "mblode\\svgplaceholder\\Svgplaceholder"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mblode\\svgplaceholder\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Blode",
+                    "homepage": "https://matthewblode.com"
+                }
+            ],
+            "description": "A plugin which generates an invisible SVG of specific dimensions for use when lazyloading images in Craft CMS templates.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft cms",
+                "craft plugin",
+                "svg placeholder"
+            ],
+            "support": {
+                "docs": "https://github.com/mblode/svgplaceholder/blob/master/README.md",
+                "issues": "https://github.com/mblode/svgplaceholder/issues"
+            },
+            "time": "2017-12-14T10:12:48+00:00"
+        },
+        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.6.4",
             "dist": {
@@ -1635,6 +1685,56 @@
                 "shell"
             ],
             "time": "2021-03-17T06:54:33+00:00"
+        },
+        {
+            "name": "mmikkel/cp-field-inspect",
+            "version": "1.2.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mmikkel/CpFieldInspect-Craft/zipball/14a717338cf5f019a4d37f086f0123e07970ebe0",
+                "reference": "14a717338cf5f019a4d37f086f0123e07970ebe0",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.5.10"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "CP Field Inspect",
+                "handle": "cp-field-inspect",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/mmikkel/CpFieldInspect-Craft/master/CHANGELOG.md",
+                "class": "mmikkel\\cpfieldinspect\\CpFieldInspect"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mmikkel\\cpfieldinspect\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mats Mikkel Rummelhoff",
+                    "homepage": "http://mmikkel.no"
+                }
+            ],
+            "description": "Inspect field handles and easily edit field and element source settings",
+            "keywords": [
+                "cms",
+                "cp field inspect",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/mmikkel/CpFieldInspect-Craft/blob/master/README.md",
+                "issues": "https://github.com/mmikkel/CpFieldInspect-Craft/issues"
+            },
+            "time": "2021-05-17T19:58:15+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",

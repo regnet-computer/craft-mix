@@ -1,5 +1,5 @@
 {% extends '_layout' %}
-{% set entry = craft.entries.slug('404').one() %}
+{% set entry = craft.entries.section('notFound').one() %}
 
 {% block main %}
   {% if entry %}

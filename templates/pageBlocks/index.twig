@@ -1,1 +1,3 @@
-cool
+{% for block in entry.pageBlocks %}
+  {% include ["pageBlocks/#{block.type}", 'pageBlocks/_default'] %}
+{% endfor %}

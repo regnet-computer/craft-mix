@@ -1,11 +1,11 @@
-field: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7
+field: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7 # Page blocks
 fieldLayouts:
   7a0966b7-b51b-4b4b-b47d-e240c1f0cc5d:
     tabs:
       -
         elements:
           -
-            fieldUid: 36519940-9679-46e5-a452-bfcfc4df5fbe
+            fieldUid: 36519940-9679-46e5-a452-bfcfc4df5fbe # Images
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  36519940-9679-46e5-a452-bfcfc4df5fbe:
+  36519940-9679-46e5-a452-bfcfc4df5fbe: # Images
     contentColumnType: string
     fieldGroup: null
     handle: images
@@ -27,7 +27,7 @@ fields:
       allowSelfRelations: false
       allowUploads: true
       allowedKinds: null
-      defaultUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd'
+      defaultUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd' # Images
       defaultUploadLocationSubpath: '{owner.slug}'
       limit: ''
       localizeRelations: false
@@ -37,11 +37,11 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd'
+      singleUploadLocationSource: 'volume:c651db94-71b8-4347-9724-e5c9429c8afd' # Images
       singleUploadLocationSubpath: ''
       source: null
       sources:
-        - 'volume:c651db94-71b8-4347-9724-e5c9429c8afd'
+        - 'volume:c651db94-71b8-4347-9724-e5c9429c8afd' # Images
       targetSiteId: null
       useSingleFolder: false
       validateRelatedElements: false

@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7
+            fieldUid: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7 # Page blocks
             instructions: null
             label: null
             required: false
@@ -40,7 +40,7 @@ fieldLayouts:
 handle: error
 hasTitleField: true
 name: Error
-section: 070d0524-b517-4764-b77a-f12f6b8b0d8e
+section: 070d0524-b517-4764-b77a-f12f6b8b0d8e # Error
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

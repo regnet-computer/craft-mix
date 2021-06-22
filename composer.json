@@ -18,6 +18,8 @@
     "craftcms/redactor": "^2.8",
     "croxton/imgixer": "^1.0",
     "ether/seo": "^3.7",
+    "mblode/svgplaceholder": "1.0.3",
+    "mmikkel/cp-field-inspect": "1.2.5",
     "nystudio107/craft-twigpack": "^1.2",
     "putyourlightson/craft-sprig": "1.6.0",
     "sebastianlenz/linkfield": "^1.0",

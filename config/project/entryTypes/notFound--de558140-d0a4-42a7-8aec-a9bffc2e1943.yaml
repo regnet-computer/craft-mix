@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7
+            fieldUid: 9efe44fe-2a14-4f10-81f7-75be0c8fbdc7 # Page blocks
             instructions: null
             label: null
             required: false
@@ -40,7 +40,7 @@ fieldLayouts:
 handle: notFound
 hasTitleField: true
 name: '404'
-section: 1d49fbc2-2ff3-452c-a450-1f45899b078a
+section: 1d49fbc2-2ff3-452c-a450-1f45899b078a # 404
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

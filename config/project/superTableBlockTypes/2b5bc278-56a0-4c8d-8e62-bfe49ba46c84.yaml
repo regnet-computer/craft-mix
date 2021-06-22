@@ -1,11 +1,11 @@
-field: cd2f8668-b66f-4078-ba74-cbfa84591afc
+field: cd2f8668-b66f-4078-ba74-cbfa84591afc # Submenu
 fieldLayouts:
   1aada638-ecdf-4955-b084-e6e804fece8b:
     tabs:
       -
         elements:
           -
-            fieldUid: 12a74f60-709b-4a2e-8778-43a5132f9568
+            fieldUid: 12a74f60-709b-4a2e-8778-43a5132f9568 # Link
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  12a74f60-709b-4a2e-8778-43a5132f9568:
+  12a74f60-709b-4a2e-8778-43a5132f9568: # Link
     contentColumnType: text
     fieldGroup: null
     handle: theLink
