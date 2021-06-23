@@ -1,6 +1,6 @@
 {
   "name": "regnet-craft-mix",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Craft CMS boilerplate with TailwindCSS, AlpineJS with Laravel Mix",
   "main": "index.js",
   "scripts": {
