@@ -8,7 +8,8 @@
     "project",
     "tailwind",
     "mix",
-    "alpine"
+    "alpine",
+    "sprig"
   ],
   "license": "0BSD",
   "homepage": "https://regnet.co/",
